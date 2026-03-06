@@ -480,3 +480,5 @@ MIT License — Lihat [LICENSE](LICENSE) untuk detail.
 
 *Built with Python, XGBoost, ONNX, and MQL5*  
 *By Muhamad Rizal Fahlepi*
+*Project ini bersifat experimen idk menjamin profit ya!*
+*Salam Cuan* 
