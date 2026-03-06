@@ -1,0 +1,309 @@
+{
+  "train_auc": 0.6582238908911552,
+  "val_auc": 0.549810225983771,
+  "test_auc": 0.5382473159300234,
+  "best_threshold": 0.51,
+  "n_train": 2828,
+  "n_val": 606,
+  "n_test": 606,
+  "model_features": [
+    "rsi",
+    "atr",
+    "daily_range",
+    "daily_direction",
+    "dist_res_norm",
+    "dist_sup_norm",
+    "sr_position",
+    "hour",
+    "dow",
+    "ret_3",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "atr_pctile",
+    "atr_change",
+    "rsi_sma",
+    "rsi_slope",
+    "near_support",
+    "near_resistance",
+    "body_size",
+    "upper_wick",
+    "lower_wick",
+    "is_bullish",
+    "bars_since_frac_up",
+    "bars_since_frac_down",
+    "vol_ratio"
+  ],
+  "feature_importance": [
+    {
+      "feature": "ret_3",
+      "importance": 0.0639926865696907
+    },
+    {
+      "feature": "ret_5",
+      "importance": 0.062146540731191635
+    },
+    {
+      "feature": "daily_range",
+      "importance": 0.06073225662112236
+    },
+    {
+      "feature": "dow",
+      "importance": 0.059475939720869064
+    },
+    {
+      "feature": "ret_10",
+      "importance": 0.059026140719652176
+    },
+    {
+      "feature": "lower_wick",
+      "importance": 0.056263793259859085
+    },
+    {
+      "feature": "bars_since_frac_up",
+      "importance": 0.05396369472146034
+    },
+    {
+      "feature": "atr",
+      "importance": 0.04855720326304436
+    },
+    {
+      "feature": "atr_change",
+      "importance": 0.04829488322138786
+    },
+    {
+      "feature": "dist_sup_norm",
+      "importance": 0.046697571873664856
+    },
+    {
+      "feature": "ret_20",
+      "importance": 0.04446352645754814
+    },
+    {
+      "feature": "atr_pctile",
+      "importance": 0.04391656816005707
+    },
+    {
+      "feature": "rsi_slope",
+      "importance": 0.04183436557650566
+    },
+    {
+      "feature": "upper_wick",
+      "importance": 0.041059233248233795
+    },
+    {
+      "feature": "rsi",
+      "importance": 0.04060826450586319
+    },
+    {
+      "feature": "rsi_sma",
+      "importance": 0.03911401331424713
+    },
+    {
+      "feature": "body_size",
+      "importance": 0.03841150179505348
+    },
+    {
+      "feature": "hour",
+      "importance": 0.03812645375728607
+    },
+    {
+      "feature": "vol_ratio",
+      "importance": 0.03756866976618767
+    },
+    {
+      "feature": "bars_since_frac_down",
+      "importance": 0.02947068028151989
+    },
+    {
+      "feature": "dist_res_norm",
+      "importance": 0.02641492895781994
+    },
+    {
+      "feature": "sr_position",
+      "importance": 0.019861098378896713
+    },
+    {
+      "feature": "daily_direction",
+      "importance": 0.0
+    },
+    {
+      "feature": "near_support",
+      "importance": 0.0
+    },
+    {
+      "feature": "near_resistance",
+      "importance": 0.0
+    },
+    {
+      "feature": "is_bullish",
+      "importance": 0.0
+    }
+  ],
+  "confusion_matrix": [
+    [
+      287,
+      8
+    ],
+    [
+      290,
+      21
+    ]
+  ],
+  "threshold_results": [
+    {
+      "threshold": 0.3,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.31,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.32,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.33,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.34,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.35,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.36,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.37,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.38,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.39,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.41,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.42,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.43,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.44,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.45,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.46,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.47,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.48,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.49,
+      "precision": 0.5132013201320133,
+      "recall": 1.0,
+      "f1": 0.678298800436205,
+      "n_signals": 606
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.5111731843575419,
+      "recall": 0.5884244372990354,
+      "f1": 0.547085201793722,
+      "n_signals": 358
+    },
+    {
+      "threshold": 0.51,
+      "precision": 0.7241379310344828,
+      "recall": 0.06752411575562701,
+      "f1": 0.12352941176470589,
+      "n_signals": 29
+    }
+  ]
+}

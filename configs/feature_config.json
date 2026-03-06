@@ -1,0 +1,293 @@
+{
+  "model_features": [
+    "rsi",
+    "atr",
+    "daily_range",
+    "daily_direction",
+    "dist_res_norm",
+    "dist_sup_norm",
+    "sr_position",
+    "hour",
+    "dow",
+    "ret_3",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "atr_pctile",
+    "atr_change",
+    "rsi_sma",
+    "rsi_slope",
+    "near_support",
+    "near_resistance",
+    "body_size",
+    "upper_wick",
+    "lower_wick",
+    "is_bullish",
+    "bars_since_frac_up",
+    "bars_since_frac_down",
+    "vol_ratio"
+  ],
+  "onnx_feature_names": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11",
+    "f12",
+    "f13",
+    "f14",
+    "f15",
+    "f16",
+    "f17",
+    "f18",
+    "f19",
+    "f20",
+    "f21",
+    "f22",
+    "f23",
+    "f24",
+    "f25"
+  ],
+  "feature_name_map": {
+    "rsi": "f0",
+    "atr": "f1",
+    "daily_range": "f2",
+    "daily_direction": "f3",
+    "dist_res_norm": "f4",
+    "dist_sup_norm": "f5",
+    "sr_position": "f6",
+    "hour": "f7",
+    "dow": "f8",
+    "ret_3": "f9",
+    "ret_5": "f10",
+    "ret_10": "f11",
+    "ret_20": "f12",
+    "atr_pctile": "f13",
+    "atr_change": "f14",
+    "rsi_sma": "f15",
+    "rsi_slope": "f16",
+    "near_support": "f17",
+    "near_resistance": "f18",
+    "body_size": "f19",
+    "upper_wick": "f20",
+    "lower_wick": "f21",
+    "is_bullish": "f22",
+    "bars_since_frac_up": "f23",
+    "bars_since_frac_down": "f24",
+    "vol_ratio": "f25"
+  },
+  "feature_name_map_reverse": {
+    "f0": "rsi",
+    "f1": "atr",
+    "f2": "daily_range",
+    "f3": "daily_direction",
+    "f4": "dist_res_norm",
+    "f5": "dist_sup_norm",
+    "f6": "sr_position",
+    "f7": "hour",
+    "f8": "dow",
+    "f9": "ret_3",
+    "f10": "ret_5",
+    "f11": "ret_10",
+    "f12": "ret_20",
+    "f13": "atr_pctile",
+    "f14": "atr_change",
+    "f15": "rsi_sma",
+    "f16": "rsi_slope",
+    "f17": "near_support",
+    "f18": "near_resistance",
+    "f19": "body_size",
+    "f20": "upper_wick",
+    "f21": "lower_wick",
+    "f22": "is_bullish",
+    "f23": "bars_since_frac_up",
+    "f24": "bars_since_frac_down",
+    "f25": "vol_ratio"
+  },
+  "threshold": 0.51,
+  "point_size_mt5": 0.001,
+  "daily_range_threshold": 5.0,
+  "rsi_oversold": 40,
+  "rsi_overbought": 70,
+  "tp_atr_mult": 2.0,
+  "sl_atr_mult": 1.6,
+  "trading_hours": [
+    2,
+    18
+  ],
+  "data_source": "GC=F yfinance H1",
+  "metrics": {
+    "train_auc": 0.6582238908911552,
+    "val_auc": 0.549810225983771,
+    "test_auc": 0.5382473159300234,
+    "test_precision": 0.7241379310344828,
+    "test_recall": 0.06752411575562701,
+    "test_f1": 0.12352941176470589,
+    "best_config": "conservative"
+  },
+  "normalization": {
+    "rsi": {
+      "mean": 53.73648256824631,
+      "std": 13.066365425174185,
+      "min": 12.762204031217763,
+      "max": 89.65676666873034
+    },
+    "atr": {
+      "mean": 14.242955519157329,
+      "std": 8.945481315335858,
+      "min": 4.390061614270423,
+      "max": 59.76963056970432
+    },
+    "daily_range": {
+      "mean": 22.993542540899597,
+      "std": 29.95023280416481,
+      "min": -208.5,
+      "max": 143.5
+    },
+    "daily_direction": {
+      "mean": 0.7069306930693069,
+      "std": 0.7073703767209628,
+      "min": -1.0,
+      "max": 1.0
+    },
+    "dist_res_norm": {
+      "mean": 0.8262071390552085,
+      "std": 1.564179688626126,
+      "min": -6.817374563010676,
+      "max": 7.615647862298053
+    },
+    "dist_sup_norm": {
+      "mean": 1.6032638685497402,
+      "std": 1.4813293403808612,
+      "min": -6.215165343622977,
+      "max": 9.812095404064948
+    },
+    "sr_position": {
+      "mean": 0.7826584671604104,
+      "std": 1.4852645205299795,
+      "min": -15.048715265666782,
+      "max": 48.99227013832384
+    },
+    "hour": {
+      "mean": 9.65,
+      "std": 4.626187340481896,
+      "min": 2.0,
+      "max": 17.0
+    },
+    "dow": {
+      "mean": 2.010891089108911,
+      "std": 1.4136462918967796,
+      "min": 0.0,
+      "max": 4.0
+    },
+    "ret_3": {
+      "mean": 0.03868695655849634,
+      "std": 0.4431350407645932,
+      "min": -2.738154026051809,
+      "max": 1.9536394444235488
+    },
+    "ret_5": {
+      "mean": 0.05944358754821301,
+      "std": 0.5735165714066417,
+      "min": -3.3280211516837244,
+      "max": 2.2506405268072127
+    },
+    "ret_10": {
+      "mean": 0.10892274685724554,
+      "std": 0.7647677734895378,
+      "min": -5.364114342457604,
+      "max": 2.8958190461328304
+    },
+    "ret_20": {
+      "mean": 0.18059000062041275,
+      "std": 1.1148483977813055,
+      "min": -6.1329452240040165,
+      "max": 3.6744339162935846
+    },
+    "atr_pctile": {
+      "mean": 0.4596504267592144,
+      "std": 0.33012305464603475,
+      "min": 0.0059523809523809,
+      "max": 1.0
+    },
+    "atr_change": {
+      "mean": 3.690357662534328,
+      "std": 15.917259388798772,
+      "min": -26.071610443690428,
+      "max": 267.30755231864924
+    },
+    "rsi_sma": {
+      "mean": 53.33473456950584,
+      "std": 11.585629885543135,
+      "min": 22.75451941719589,
+      "max": 83.36112346489747
+    },
+    "rsi_slope": {
+      "mean": 0.3456333104520793,
+      "std": 8.209516619497721,
+      "min": -32.18706781938865,
+      "max": 38.21881064526176
+    },
+    "near_support": {
+      "mean": 0.031683168316831684,
+      "std": 0.17517688471855902,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "near_resistance": {
+      "mean": 0.09133663366336633,
+      "std": 0.28812289258671764,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "body_size": {
+      "mean": 0.46011537684343184,
+      "std": 0.4490277960057816,
+      "min": 0.0,
+      "max": 5.574095148731745
+    },
+    "upper_wick": {
+      "mean": 0.2211027182666913,
+      "std": 0.20849397758152424,
+      "min": 0.0,
+      "max": 3.1171863436257463
+    },
+    "lower_wick": {
+      "mean": 0.3793713164128594,
+      "std": 0.3703483730331372,
+      "min": 0.0,
+      "max": 4.009270787072998
+    },
+    "is_bullish": {
+      "mean": 0.5383663366336634,
+      "std": 0.49858756129861387,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "bars_since_frac_up": {
+      "mean": 4.727970297029703,
+      "std": 4.450549158023209,
+      "min": 0.0,
+      "max": 26.0
+    },
+    "bars_since_frac_down": {
+      "mean": 4.201732673267327,
+      "std": 4.006203034788833,
+      "min": 0.0,
+      "max": 26.0
+    },
+    "vol_ratio": {
+      "mean": 1.2920462428375104,
+      "std": 1.0560263622352715,
+      "min": 0.0,
+      "max": 11.375573069165876
+    }
+  }
+}
